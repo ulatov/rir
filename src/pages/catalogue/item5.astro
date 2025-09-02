@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import ItemImage from "./Item5.png"
+import { Picture } from "astro:assets"
+
+const itemName  = "Кронштейн мушки для МДТ или ДТ СВД/Тигр/TG3"
+const pageTitle = "| Рок-и-Ровка | Каталог".concat(" | ", itemName, " |")
+---
+<BaseLayout pageTitle={pageTitle} itemName = {itemName}>
+
+    <Picture src={ItemImage} formats={['avif', 'webp']} alt="" layout='constrained' width={400} />
+
+    <p><strong>Материал:</strong> Сталь 40Х</p>
+
+    <p><strong>Масса:</strong> 19 г</p>
+
+    <p><strong>Покрытие:</strong> Хим.Окс.Прм (черный)</p>
+
+    <p>Крепление кронштейна к МДТ или ДТ осуществляется высокопрочным винтом М4 и штифтом d3.
+    В верхней части выполнен паз типа «ласточкин хвост», аналогичный соответствующему пазу в
+    штатном пламегасителе. Основание мушки вставляется в паз «в натяг».</p>
+
+    <p>На задней поверхности кронштейна нанесены риски для удобства приведения механических
+    прицельных приспособлений.</p>
+
+    <p>Требуются слесарные навыки и инструмент для установки</p>
+    
+    <h3>Цена: 3500 руб.</h3>
+</BaseLayout>

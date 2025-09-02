@@ -1,0 +1,11 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+import { Picture } from 'astro:assets'
+---
+<BaseLayout>
+    <h1> {frontmatter.title}</h1>
+    <h2>{frontmatter.myImageUrl}</h2>
+    <slot />
+</BaseLayout>
+

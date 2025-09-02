@@ -1,0 +1,13 @@
+---
+import { Picture } from 'astro:assets';
+
+const { src, ...attrs } = Astro.props;
+---
+<Picture src={src} {...attrs} formats={['avif', 'webp']} alt="" layout='constrained' fit="contain"/>
+
+<style>
+    img{
+        height: auto;
+        width: auto;
+    }
+</style>

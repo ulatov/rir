@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+import CatalogItem from "../../components/CatalogItem.astro";
+
+import Item1Image from '../catalogue/Item1.png'
+import Item2Image from '../catalogue/Item2.png'
+import Item3Image from '../catalogue/Item3.png'
+import Item4Image from '../catalogue/Item4.png'
+import Item5Image from '../catalogue/Item5.png'
+import Item6Image from '../catalogue/Item6.png'
+import Item7Image from '../catalogue/Item7.png'
+---
+
+<BaseLayout pageTitle="| Рок-и-Ровка | Каталог |">
+	<h2>Каталог продукции</h2>
+
+	<div>
+		<CatalogItem url='item1' title='Регулируемый газблок СВД/Тигр/TG3' src={Item1Image} price="12 900"/>
+		<CatalogItem url='item2' title='Регулируемый газблок СВД/Тигр/TG3 с возможностью установки штатной мушки' src={Item2Image} price="13 900"/>
+		<CatalogItem url='item3' title='Модульный дульный тормоз СВД/Тигр/TG3' src={Item3Image} price="14 700"/>
+		<CatalogItem url='item4' title='Дульный тормоз СВД/Тигр/TG3 переходник на М24х1.5' src={Item4Image} price="8 000"/>
+		<CatalogItem url='item5' title='Кронштейн мушки для МДТ или ДТ СВД/Тигр/TG3' src={Item5Image} price="3 500"/>
+		<CatalogItem url='item6' title='Комплект для снятия крышки ствольной коробки СВД/Тигр/TG3 отдельно от возвратного механизма' src={Item6Image} price="3 500"/>
+		<CatalogItem url='item7' title='Цевье СВД/Тигр/TG3 «Gen-VI M-LOK»' src={Item7Image} price="41 000"/>
+	</div>
+</BaseLayout>
+
+<style>
+	div {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 10px;
+		grid-auto-rows: 1fr;
+	}
+</style>
