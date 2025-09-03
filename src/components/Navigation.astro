@@ -1,7 +1,17 @@
 ---
+import Logo from "./Logo.astro";
+
 ---
 <div class="nav-links">
-    <a href="/">В начало</a>
+    <a href="/"><Logo /></a>
     <a href="/catalogue/">Каталог</a>
     <a href="/contacts/">Контакты</a>
 </div>
+
+<style>
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+</style>

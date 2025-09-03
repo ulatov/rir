@@ -1,0 +1,13 @@
+---
+import { Picture } from 'astro:assets';
+import logo from "../images/originalLogo.jpg";
+---
+<div>
+    <Picture src={logo} formats={['avif', 'webp']} alt="" layout='constrained' fit="contain"/>
+</div>
+
+<style>
+    img {
+        clip-path: circle(35px at center);
+    }
+</style>
